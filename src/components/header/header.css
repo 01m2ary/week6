@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7FDFD;
+  width:100%;
+
+}
+
+.container {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.left, .center, .right {
+  display: flex;
+  align-items: center;
+
+}
+
+.left p {
+  color: transparent;
+  background: linear-gradient(90deg, #9CE2E8 0%, #134D52 50%, #21868E 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 16px;
+}
+.center{
+  width:275px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center p {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #999999; /* افتراضي: اللون الرمادي */
+  font-size: 14px;
+}
+
+.center p.active {
+  color: #0A0A0A; /* اللون عند الضغط */
+  border-bottom: 1px solid var(--Color-Primary-Primary, #3C97AF); /* الخط أسفل العنصر النشط */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.right input {
+  padding: 5px 30px 5px 33px; /* اضافة مساحة داخلية لتوسيع الحقل بسبب الصورة */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  outline:none;
+  box-shadow: 0px 2px 8px 0px #3C97AF14;
+  border:none;
+  border-radius:16px;
+  height:33px;
+}
+
+.search-container {
+  position: relative;
+  gap:10px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none; /* لتجنب تأثير النقر على الصورة */
+}
