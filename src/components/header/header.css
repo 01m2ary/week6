@@ -49,22 +49,29 @@
 .center p {
   margin: 0 10px;
   cursor: pointer;
-  color: #999999; /* افتراضي: اللون الرمادي */
+  color: #999999;
   font-size: 14px;
 }
 
 .center p.active {
-  color: #0A0A0A; /* اللون عند الضغط */
-  border-bottom: 1px solid var(--Color-Primary-Primary, #3C97AF); /* الخط أسفل العنصر النشط */
+  color: #0A0A0A; 
+  border-bottom: 1px solid var(--Color-Primary-Primary, #3C97AF); 
   font-size: 14px;
   font-weight: bold;
 }
 
+.right{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  width:350px;
+}
+
 .right input {
-  padding: 5px 30px 5px 33px; /* اضافة مساحة داخلية لتوسيع الحقل بسبب الصورة */
+  padding: 5px 30px 5px 33px; 
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 250px;
+  width: 220px;
   outline:none;
   box-shadow: 0px 2px 8px 0px #3C97AF14;
   border:none;
@@ -84,5 +91,52 @@
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  pointer-events: none; /* لتجنب تأثير النقر على الصورة */
+  pointer-events: none; 
 }
+
+.Notifications{
+  width:45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  box-shadow: 1px 2px 8px 0px #21868E36;
+
+}
+
+.Notifications1{
+
+  width:24px;
+  height: 24px;
+}
+
+.alert{
+  position: absolute;
+  background-color: #5A9BD8;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 32px;
+  top:0;
+}
+
+.Notifications-popup {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 60px;
+
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+
+
