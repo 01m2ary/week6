@@ -104,6 +104,7 @@
   justify-content:center;
   align-items: center;
   box-shadow: 1px 2px 8px 0px #21868E36;
+  
 
 }
 
@@ -128,17 +129,26 @@
   flex-direction: column;
 
   position: absolute;
-  top: 60px;
+  top: 50px;
+  right:12px;
 
   background-color: white;
-  border: 1px solid #ddd;
+  border: none;
   padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 8px 0px #21868E40;
+
   border-radius: 8px;
   z-index: 1000;
-  width:430px;
-  height:478px;
+  width:470px;
+  height:470px;
+  max-height:480px;
+  overflow-y:scroll;
 }
+.Notifications-popup::-webkit-scrollbar{
+  width:0;
+  background:transparent;
+}
+
 
 .container01{
   margin:10px;
@@ -193,6 +203,7 @@
 
 .notification-comment {
   font-size: 14px !important;
+  width:192px;
 }
 
 
@@ -216,3 +227,6 @@
   margin-left:8px;
 }
 
+img{
+  width:45px;
+}
